@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ball Game</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .hidden {
+            display: none !important;
+        }
+        h1 {
+            color:white;
+            font-size: 36px;
+        }
+        .winner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            z-index: 1;
+            height: 100vh;
+            width: 100vw;
+        }
+        .play-btn {
+            margin: 20px;
+            text-align: center;
+            border-radius: 1px;
+            font-size: 16px;
+            background-color: transparent;
+            border: solid 2px blue;
+            color: white;
+            padding: 8px;
+        }
+        .play-btn:hover {
+            background-color: blue;
+
+        }
+    </style>
+</head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.14.2/matter.min.js"></script>
+<body>
+    <div class="winner hidden">
+        <h1>WINNER WINNER CHICKEN DINNER</h1>
+        <button class="play-btn">Play Again?</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
